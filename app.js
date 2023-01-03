@@ -1,5 +1,5 @@
-const wine = {
-    wine1: {
+const wine = [
+    {
         id: 1,
         name: 'Kendall Jackson',
         category: 'Chardonnay',
@@ -8,7 +8,7 @@ const wine = {
         price: 21.99,
         winery: 'Fulton, California, US'
     },
-    wine2: {
+    {
         id: 2,
         name: 'Hardys',
         category: 'Shiraz',
@@ -17,6 +17,22 @@ const wine = {
         price: 10.99,
         winery: 'Australia'
     }
-}
+]
 
 console.log(wine);
+
+const wineList = document.querySelector('#wine-list');
+
+wine.forEach(item => {
+    const wineItem = document.createElement('ul');
+    wineItem.innerHTML = `
+    <li>${item.name}</li>
+    <li>${item.category}</li>
+    <li>${item.color[0].toUpperCase() + item.color.slice(1)}</li>
+    <li>${item.vintage}</li>
+    <li>$${item.price}</li>
+    <li>${item.winery}</li>
+    `
+
+    wineList.append(wineItem);
+});
