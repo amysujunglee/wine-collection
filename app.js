@@ -1,6 +1,7 @@
 import wineList from './components/data.js';
 
 const result = document.querySelector('#show-result');
+const btnColorRed = document.querySelector('.btn-color-red');
 
 wineList.forEach(item => {
     const wineItem = document.createElement('ul');
@@ -14,4 +15,14 @@ wineList.forEach(item => {
     `
 
     result.append(wineItem);
+});
+
+btnColorRed.addEventListener('click', () => {
+    console.log('clicked!');
+    wineList.forEach(item => {
+        console.log(item);
+        if (item.color === 'white') {
+            console.log('hide it');
+        }
+    })
 });
