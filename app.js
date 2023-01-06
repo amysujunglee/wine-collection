@@ -15,14 +15,19 @@ wineList.forEach(item => {
     `
 
     result.append(wineItem);
+
+    btnColorRed.addEventListener('click', (e) => {
+        // console.log(e.target);
+        // console.log('clicked!');
+        // wineList.forEach(item => {
+        //     if (item.color === 'white') {
+        //         console.log(wineItem);
+        //     }
+        // })
+
+        if (item.color === 'white') {
+            console.log(item);
+        }
+    });
 });
 
-btnColorRed.addEventListener('click', (e) => {
-    console.log(e.target);
-    console.log('clicked!');
-    wineList.forEach(item => {
-        if (item.color === 'white') {
-            console.log(item.parentElement);
-        }
-    })
-});
