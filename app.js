@@ -17,12 +17,12 @@ wineList.forEach(item => {
     result.append(wineItem);
 });
 
-btnColorRed.addEventListener('click', () => {
+btnColorRed.addEventListener('click', (e) => {
+    console.log(e.target);
     console.log('clicked!');
     wineList.forEach(item => {
-        console.log(item);
         if (item.color === 'white') {
-            console.log('hide it');
+            console.log(item.parentElement);
         }
     })
 });

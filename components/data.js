@@ -3,7 +3,7 @@ const wineList = [
         id: 1,
         name: 'Kendall Jackson',
         category: 'Chardonnay',
-        color: 'White',
+        color: 'white',
         vintage: '2020',
         price: 21.49,
         winery: 'California, US'
@@ -12,8 +12,8 @@ const wineList = [
         id: 2,
         name: 'Hardys',
         category: 'Shiraz/Syrah',
-        color: 'Red',
-        vintage: '',
+        color: 'red',
+        vintage: '2018',
         price: 11.98,
         winery: 'Hardys, South Eastern Australia'
     },
@@ -21,10 +21,19 @@ const wineList = [
         id: 3,
         name: 'Kung Fu Girl',
         category: 'Riesling',
-        color: 'White',
+        color: 'white',
         vintage: '2017',
         price: 19.98,
         winery: 'Washington, US'
+    },
+    {
+        id: 4,
+        name: 'Damilano',
+        category: 'Nebbiolo Langhe Marghe',
+        color: 'red',
+        vintage: '2018',
+        price: 36.99,
+        winery: 'Italy'
     }
 ];
 
