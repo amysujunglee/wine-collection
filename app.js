@@ -1,4 +1,4 @@
-import wineList from './components/data.js';
+import wineList from './data.js';
 
 const result = document.querySelector('#show-result');
 const btnColorRed = document.querySelector('.btn-color-red');
@@ -12,7 +12,7 @@ wineList.forEach(item => {
     <li>${item.vintage}</li>
     <li>$${item.price}</li>
     <li>${item.winery}</li>
-    `
+    `;
 
     result.append(wineItem);
 
