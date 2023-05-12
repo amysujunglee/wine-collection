@@ -14,6 +14,7 @@ const showWineList = (wine) => {
     <li>${wine.vintage}</li>
     <li>$${wine.price}</li>
     <li>${wine.country}</li>
+    <li>${wine.recommend === true ? 'Good' : 'Bad'}</li>
     `;
 
     result.append(wineItem);
