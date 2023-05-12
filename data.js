@@ -2,38 +2,38 @@ const wineList = [
     {
         id: 1,
         name: 'Kendall Jackson',
-        category: 'Chardonnay',
-        color: 'white',
+        grape: 'Chardonnay',
+        type: 'white',
         vintage: '2020',
         price: 21.49,
-        winery: 'California, US'
+        country: 'California, US'
     },
     {
         id: 2,
         name: 'Hardys',
-        category: 'Shiraz/Syrah',
-        color: 'red',
+        grape: 'Shiraz/Syrah',
+        type: 'red',
         vintage: '2018',
         price: 11.98,
-        winery: 'Hardys, South Eastern Australia'
+        country: 'Hardys, South Eastern Australia'
     },
     {
         id: 3,
         name: 'Kung Fu Girl',
-        category: 'Riesling',
-        color: 'white',
+        grape: 'Riesling',
+        type: 'white',
         vintage: '2017',
         price: 19.98,
-        winery: 'Washington, US'
+        country: 'Washington, US'
     },
     {
         id: 4,
         name: 'Damilano',
-        category: 'Nebbiolo Langhe Marghe',
-        color: 'red',
+        grapy: 'Nebbiolo Langhe Marghe',
+        type: 'red',
         vintage: '2018',
         price: 36.99,
-        winery: 'Italy'
+        country: 'Italy'
     }
 ];
 
