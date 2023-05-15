@@ -4,5 +4,6 @@
 - JavaScript, HTML, CSS
 
 ## Methods
+- filter()
 - forEach()
 - append()
