@@ -5,6 +5,7 @@ const btnAll = document.querySelector('.btn.all')
 const btnRed = document.querySelector('.btn.red');
 const btnWhite = document.querySelector('.btn.white');
 
+const btnCabernetSauvignon = document.querySelector('.btn.cabernet-sauvignon');
 const btnChardonnay = document.querySelector('.btn.chardonnay');
 const btnShiraz = document.querySelector('.btn.shiraz');
 const btnRiesling = document.querySelector('.btn.riesling');
@@ -12,6 +13,10 @@ const btnNebbiolo = document.querySelector('.btn.nebbiolo');
 
 const btnUnder20 = document.querySelector('.btn.under20');
 const btnUnder30 = document.querySelector('.btn.under30');
+const btnUnder40 = document.querySelector('.btn.under40');
+
+const btnGood = document.querySelector('.btn.good');
+const btnBad = document.querySelector('.btn.bad');
 
 const showWineList = (wine) => {
     const wineItem = document.createElement('ul');
@@ -21,7 +26,7 @@ const showWineList = (wine) => {
     <li>${wine.name}</li>
     <li>${wine.grape[0].toUpperCase() + wine.grape.slice(1)}</li>
     <li>${wine.type[0].toUpperCase() + wine.type.slice(1)}</li>
-    <li>${wine.vintage}</li>
+    ${wine.vintage !== '' ? `<li>${wine.vintage}</li>` : ''}
     <li>$${wine.price}</li>
     <li>${wine.country}</li>
     <li>${wine.recommend === true ? 'Good' : 'Bad'}</li>
@@ -66,6 +71,18 @@ btnWhite.addEventListener('click', () => {
     });
 
     whiteWine.forEach(wine => {
+        showWineList(wine);
+    });
+});
+
+btnCabernetSauvignon.addEventListener('click', () => {
+    resetList();
+
+    const cabernetSauvignonWine = wineList.filter(wine => {
+        return wine.grape === 'cabernet sauvignon';
+    });
+
+    cabernetSauvignonWine.forEach(wine => {
         showWineList(wine);
     });
 });
@@ -138,6 +155,42 @@ btnUnder30.addEventListener('click', () => {
     });
 
     under30Wine.forEach(wine => {
+        showWineList(wine);
+    });
+});
+
+btnUnder40.addEventListener('click', () => {
+    resetList();
+
+    const under40Wine = wineList.filter(wine => {
+        return wine.price <= 40;
+    });
+
+    under40Wine.forEach(wine => {
+        showWineList(wine);
+    });
+});
+
+btnGood.addEventListener('click', () => {
+    resetList();
+
+    const goodWine = wineList.filter(wine => {
+        return wine.recommend === true;
+    });
+
+    goodWine.forEach(wine => {
+        showWineList(wine);
+    });
+});
+
+btnBad.addEventListener('click', () => {
+    resetList();
+
+    const badWine = wineList.filter(wine => {
+        return wine.recommend === false;
+    });
+
+    badWine.forEach(wine => {
         showWineList(wine);
     });
 });

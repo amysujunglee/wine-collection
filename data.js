@@ -1,4 +1,4 @@
-const wineList = [
+export const wineList = [
     {
         id: 1,
         name: 'Kendall Jackson',
@@ -26,7 +26,7 @@ const wineList = [
     {
         id: 3,
         name: 'Kung Fu Girl',
-        image: './images/kungfugirl_riesling.png',
+        image: './images/kung_fu_girl_riesling.png',
         grape: 'riesling',
         type: 'white',
         vintage: '2017',
@@ -39,6 +39,28 @@ const wineList = [
         name: 'Damilano',
         grape: 'nebbiolo',
         image: './images/damilano_nebbiolo.png',
+        type: 'red',
+        vintage: '2018',
+        price: 36.99,
+        country: 'Italy',
+        recommend: true
+    },
+    {
+        id: 5,
+        name: 'Napa Paradise Cellars',
+        grape: 'cabernet sauvignon',
+        image: './images/napa_paradise_cellars_cabernet_sauvignon.jpg',
+        type: 'red',
+        vintage: '',
+        price: 41.54,
+        country: 'Napa Valley, US',
+        recommend: true
+    },
+    {
+        id: 6,
+        name: 'Chateau Ste. Michelle',
+        grape: 'riesling',
+        image: './images/chateau_ste_michelle_riesling.png',
         type: 'red',
         vintage: '2018',
         price: 36.99,
