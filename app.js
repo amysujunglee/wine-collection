@@ -4,10 +4,14 @@ const result = document.querySelector('#show-result');
 const btnAll = document.querySelector('.btn.all')
 const btnRed = document.querySelector('.btn.red');
 const btnWhite = document.querySelector('.btn.white');
+
 const btnChardonnay = document.querySelector('.btn.chardonnay');
 const btnShiraz = document.querySelector('.btn.shiraz');
 const btnRiesling = document.querySelector('.btn.riesling');
 const btnNebbiolo = document.querySelector('.btn.nebbiolo');
+
+const btnUnder20 = document.querySelector('.btn.under20');
+const btnUnder30 = document.querySelector('.btn.under30');
 
 const showWineList = (wine) => {
     const wineItem = document.createElement('ul');
@@ -110,6 +114,30 @@ btnNebbiolo.addEventListener('click', () => {
     });
 
     nebbioloWine.forEach(wine => {
+        showWineList(wine);
+    });
+});
+
+btnUnder20.addEventListener('click', () => {
+    resetList();
+
+    const under20Wine = wineList.filter(wine => {
+        return wine.price <= 20;
+    });
+
+    under20Wine.forEach(wine => {
+        showWineList(wine);
+    });
+});
+
+btnUnder30.addEventListener('click', () => {
+    resetList();
+
+    const under30Wine = wineList.filter(wine => {
+        return wine.price <= 30;
+    });
+
+    under30Wine.forEach(wine => {
         showWineList(wine);
     });
 });
