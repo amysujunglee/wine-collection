@@ -61,10 +61,10 @@ export const wineList = [
         name: 'Chateau Ste. Michelle',
         grape: 'riesling',
         image: './images/chateau_ste_michelle_riesling.png',
-        type: 'red',
-        vintage: '2018',
-        price: 36.99,
-        country: 'Italy',
+        type: 'white',
+        vintage: '',
+        price: 24.90,
+        country: 'Columbia Valley, US',
         recommend: true
     }
 ];
