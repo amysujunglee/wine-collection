@@ -24,7 +24,7 @@ const showWineList = (wine) => {
     wineItem.innerHTML = `
     ${wine.image ? `<li><img src="${wine.image}" class="wine-img" /></li>` : ''}
     <li>${wine.name}</li>
-    <li>${wine.grape[0].toUpperCase() + wine.grape.slice(1)}</li>
+    <li>${wine.grape}</li>
     <li>${wine.type[0].toUpperCase() + wine.type.slice(1)}</li>
     ${wine.vintage !== '' ? `<li>${wine.vintage}</li>` : ''}
     <li>$${wine.price}</li>
@@ -79,7 +79,7 @@ btnCabernetSauvignon.addEventListener('click', () => {
     resetList();
 
     const cabernetSauvignonWine = wineList.filter(wine => {
-        return wine.grape === 'cabernet sauvignon';
+        return wine.grape === 'Cabernet Sauvignon';
     });
 
     cabernetSauvignonWine.forEach(wine => {
@@ -91,7 +91,7 @@ btnChardonnay.addEventListener('click', () => {
     resetList();
 
     const chardonnayWine = wineList.filter(wine => {
-        return wine.grape === 'chardonnay';
+        return wine.grape === 'Chardonnay';
     });
 
     chardonnayWine.forEach(wine => {
@@ -103,7 +103,7 @@ btnShiraz.addEventListener('click', () => {
     resetList();
 
     const shirazWine = wineList.filter(wine => {
-        return wine.grape === 'shiraz';
+        return wine.grape === 'Shiraz';
     });
 
     shirazWine.forEach(wine => {
@@ -115,7 +115,7 @@ btnRiesling.addEventListener('click', () => {
     resetList();
 
     const rieslingWine = wineList.filter(wine => {
-        return wine.grape === 'riesling';
+        return wine.grape === 'Riesling';
     });
 
     rieslingWine.forEach(wine => {
@@ -127,7 +127,7 @@ btnNebbiolo.addEventListener('click', () => {
     resetList();
 
     const nebbioloWine = wineList.filter(wine => {
-        return wine.grape === 'nebbiolo';
+        return wine.grape === 'Nebbiolo';
     });
 
     nebbioloWine.forEach(wine => {
