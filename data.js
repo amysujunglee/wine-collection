@@ -104,7 +104,7 @@ export const wineList = [
         driness: 'dry',
         sweetness: 'sweet',
         recommend: true,
-        image: './images/19_crimes_cabernet_sauvignon.png',
+        image: './images/two_hands_shiraz.png',
         link: 'https://www.vivino.com/CA/en/two-hands-wines-angels-share-shiraz/w/6168?ref=nav-search'
     }
 ];
