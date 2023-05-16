@@ -8,6 +8,7 @@ const btnWhite = document.querySelector('.btn.white');
 const showWineList = (wine) => {
     const wineItem = document.createElement('ul');
     wineItem.innerHTML = `
+    ${wine.image ? `<li><img src="${wine.image}" class="wine-img" /></li>` : ''}
     <li>${wine.name}</li>
     <li>${wine.grape}</li>
     <li>${wine.type[0].toUpperCase() + wine.type.slice(1)}</li>
