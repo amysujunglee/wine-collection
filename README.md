@@ -1,7 +1,7 @@
 # Wine Collection
 
 ## Languages
-- JavaScript, HTML, CSS
+- JavaScript, HTML, CSS (TailwindCSS)
 
 ## Methods
 - filter()
