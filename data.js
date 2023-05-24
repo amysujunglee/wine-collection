@@ -7,11 +7,13 @@ export const wineList = [
         vintage: '2020',
         price: 21.49,
         country: 'California, US',
+        alcohol: 14,
         driness: 'dry',
         sweetness: 'sweet',
         recommend: true,
         image: './images/kendall_jackson_chardonnay.png',
-        link: ''
+        link: '',
+        notes: ''
     },
     {
         id: 2,
