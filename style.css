@@ -5,6 +5,7 @@ body {
 ul {
     list-style-type: none;
     text-align: center;
+    padding: 0;
 }
 
 button {
@@ -18,6 +19,7 @@ button {
 
 .wine-img {
     height: 200px;
+    margin-bottom: 1.5rem;
 }
 
 .wine-list-container {
@@ -28,4 +30,16 @@ button {
 
 .wine-item {
     margin-right: 4rem;
+    border: 1px solid #999;
+    padding: 1rem;
+}
+
+.wine-item > li {
+    margin-top: .3rem;
+}
+
+.wine-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
