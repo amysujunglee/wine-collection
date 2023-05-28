@@ -23,13 +23,13 @@ button {
 }
 
 .wine-list-container {
-    margin-top: 3rem;
+    margin: 3rem auto 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
 }
 
 .wine-item {
-    margin-right: 4rem;
     border: 1px solid #999;
     padding: 1rem;
 }
