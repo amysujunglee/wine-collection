@@ -7,6 +7,15 @@ ul {
     text-align: center;
 }
 
+button {
+    width: auto;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
 .wine-img {
     height: 200px;
 }
