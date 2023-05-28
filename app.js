@@ -24,7 +24,6 @@ const showWineList = (wine) => {
     wineItem.innerHTML = `
     ${wine.image ? `<li><img src="${wine.image}" class="wine-img" /></li>` : ''}
     <li class="wine-name">${wine.name}</li>
-    <li>${wine.grape}</li>
     <li>${wine.type[0].toUpperCase() + wine.type.slice(1)}</li>
     ${wine.vintage !== '' ? `<li>${wine.vintage}</li>` : ''}
     <li>$${wine.price}</li>
